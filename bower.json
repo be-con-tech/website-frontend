@@ -21,7 +21,8 @@
     "waypoints": "^4.0.0",
     "flexboxgrid-sass": "^8.0.5",
     "css-hamburgers": "^0.7.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery-validation": "jquery-validate#^1.17.0"
   },
   "devDependencies": {},
   "overrides": {}

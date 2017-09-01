@@ -186,6 +186,10 @@ section.gradient {
 }
 
 section.intro {
+	h2 {
+		margin-bottom: .5em;
+	}
+
 	.row > div {
 		text-align: center;
 	}
@@ -214,6 +218,12 @@ section.image {
 	background-size: cover;
 }
 
+section.cards {
+	h2 {
+		margin-bottom: 0.5em;
+	}
+}
+
 .card {
 	text-align: left;
 	padding: 20px;
@@ -224,9 +234,12 @@ section.image {
 	margin: 0 10px 20px;
 	color: $color-black;
 	background-color: $background;
+	overflow: hidden;
 
 	h3 {
 		margin-top: 0;
+		margin-bottom: .5em;
+		text-align: center;
 	}
 
 	.image {
@@ -238,6 +251,10 @@ section.image {
 			margin: -20px -20px 20px;
 			height: 230px;
 			background-size: cover;
+		}
+
+		h3 {
+			text-align: left;
 		}
 	}
 
