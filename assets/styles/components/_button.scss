@@ -15,7 +15,7 @@
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 16px;
-	height: 51px;
+	height: 40px;
 	border-radius: 100px;
 	width: 130px;
 	padding: 0 20px;
@@ -28,6 +28,8 @@
 	transform: perspective(1px) translateZ(0);
 	transition: .5s;
 	overflow: hidden;
+	appearance: none;
+
 	&:before {
 		content: "";
 		position: absolute;

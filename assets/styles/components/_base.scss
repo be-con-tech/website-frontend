@@ -167,24 +167,94 @@ blockquote {
 	}
 }
 
+section.section {
+	padding: 100px 0;
+}
+
 section.yellow {
 	background-color: $brand-primary;
 }
 
 section.purple {
 	background-color: $secondary-purple;
+	color: $color-white;
 }
 
 section.gradient {
 	background-image: linear-gradient(to bottom, $secondary-dkpurple, $secondary-purple);
+	color: $color-white;
 }
 
 section.intro {
 	.row > div {
 		text-align: center;
 	}
+
 	.content {
 		font-size: 24px;
 		line-height: 36px;
+	}
+}
+
+section.text {
+	h2 {
+		span {
+			background-image: linear-gradient(to bottom, $secondary-purple, $secondary-purple);
+			background-size: 100% 3px;
+			background-position: 0 calc(100% - 3px);
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+section.image {
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card {
+	text-align: left;
+	padding: 20px;
+	border: 1px $color-ltgray solid;
+	border-radius: 5px;
+	box-shadow: $box-shadow;
+	margin-bottom: 20px;
+	margin: 0 10px 20px;
+	color: $color-black;
+	background-color: $background;
+
+	h3 {
+		margin-top: 0;
+	}
+
+	.image {
+		margin-bottom: 20px;
+	}
+
+	&.image-card {
+		.image {
+			margin: -20px -20px 20px;
+			height: 230px;
+			background-size: cover;
+		}
+	}
+
+	&.icon-card {
+		.image {
+			text-align: center;
+
+			i.fa {
+				font-size: 96px;
+				color: $secondary-purple;
+			}
+
+			img {
+				margin: 0 auto;
+				max-width: 150px;
+				max-height: 150px;
+			}
+		}
 	}
 }

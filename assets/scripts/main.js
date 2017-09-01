@@ -47,11 +47,6 @@
 					});
 				})();
 
-				// Form
-				(function() {
-					$('select').selectric();
-				})();
-
 			},
 			finalize: function() {
 				// JavaScript to be fired on all pages, after page specific JS is fired
@@ -61,25 +56,6 @@
 		// Home page
 		'page_template_template_home': {
 			init: function() {
-				var waypoint1 = new Waypoint({
-					element: document.getElementById('section_id'),
-					handler: function(direction) {
-						if (direction === 'down'){
-							$('.col-left').addClass('fadeInUp');
-						}
-					},
-					offset: '77%'
-				});
-
-				var waypoint2 = new Waypoint({
-					element: document.getElementById('section_id'),
-					handler: function(direction) {
-						if (direction === 'down'){
-							$('.col-right').addClass('fadeInUp');
-						}
-					},
-					offset: '77%'
-				});
 
 			},
 			finalize: function() {

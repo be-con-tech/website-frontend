@@ -283,21 +283,9 @@ textarea {
 }
 
 input[type="submit"] {
-	height:50px;
-	line-height: 40px;
-	padding:5px;
-	cursor:pointer;
-	width: 100%;
-	background:$secondary-purple;
-	color:$color-white;
-	text-transform:uppercase;
-	font-weight: 900;
-	font-size:18px;
-	border-radius:$form-field-border-radius;
-	border:2px solid $secondary-purple;
-
 	&:hover {
 		background:$color-white;
+		color: $secondary-purple;
 	}
 }
 
@@ -469,4 +457,15 @@ input[type="submit"] {
 	color:$red;
 	font-size:14px;
 	text-align:right;
+}
+
+.newsletter-form {
+	display: flex;
+	align-items: center;
+
+	input[type="submit"] {
+		width: auto;
+		flex-grow: 0;
+		margin-left: 20px;
+	}
 }

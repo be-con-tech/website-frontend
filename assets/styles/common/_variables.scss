@@ -16,14 +16,18 @@ $secondary-dkpurple: #1E1E8C;
 $background: #FFFFFF;
 $color-white: #FFFFFF;
 $color-black: #2A2A2A;
+$color-gray: #979797;
+$color-ltgray: #ECECEC;
 $red: #ED3024;
+
+$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.10);
 
 // Forms
 $form-field-border-radius:3px;
 $form-field-background:$color-white;
-$form-field-border:1px solid #ccc;
-$form-field-font-size:14px;
-$form-field-color:#000;
+$form-field-border:1px solid $color-gray;
+$form-field-font-size:16px;
+$form-field-color:$color-black;
 $form-field-padding:0 10px;
 $form-field-height:40px;
 
@@ -44,5 +48,8 @@ $breakpoints:
   sm 568px 568px,
   md 768px 768px,
   lg 960px 960px,
-  xlg 1200px 1200px !default;
-$flexboxgrid-max-width: $wrapper-max-width-large !default;
+  xlg 1200px 1200px;
+$flexboxgrid-max-width: $wrapper-max-width-large;
+
+$gutter-width: 20px;
+$outer-margin: 40px;
