@@ -1,0 +1,48 @@
+//
+// Component:       Variables
+// Description:     Defines all color and style related values as variables
+//                  to allow easy customization for the most common cases.
+//
+// ========================================================================
+
+// ========================================================================
+// Component: Variables
+// ========================================================================
+
+// Colors
+$brand-primary: #FFF200;
+$secondary-purple: #4242BA;
+$secondary-dkpurple: #1E1E8C;
+$background: #FFFFFF;
+$color-white: #FFFFFF;
+$color-black: #2A2A2A;
+$red: #ED3024;
+
+// Forms
+$form-field-border-radius:3px;
+$form-field-background:$color-white;
+$form-field-border:1px solid #ccc;
+$form-field-font-size:14px;
+$form-field-color:#000;
+$form-field-padding:0 10px;
+$form-field-height:40px;
+
+
+// Layout
+$wrapper-max-width-large:1440px;
+$wrapper-max-width-small:1200px;
+
+$hamburger-padding-x                       : 15px;
+$hamburger-padding-y                       : 15px;
+$hamburger-layer-width                     : 40px;
+$hamburger-layer-height                    : 4px;
+$hamburger-layer-spacing                   : 6px;
+$hamburger-layer-color                     : #000;
+$hamburger-layer-border-radius             : 4px;
+
+$breakpoints:
+  sm 568px 568px,
+  md 768px 768px,
+  lg 960px 960px,
+  xlg 1200px 1200px !default;
+$flexboxgrid-max-width: $wrapper-max-width-large !default;

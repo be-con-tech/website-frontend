@@ -1,0 +1,28 @@
+{
+  "name": "Be-Con Frontend",
+  "description": "Frontend for the Be-Con convention website",
+  "main": "index.html",
+  "authors": [
+    "Carly Ho <carlymho@gmail.com>",
+    "Stephanie Slattery <stephanie.n.slattery@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "waypoints": "^4.0.0",
+    "flexboxgrid-sass": "^8.0.5",
+    "css-hamburgers": "^0.7.0",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "overrides": {}
+}
