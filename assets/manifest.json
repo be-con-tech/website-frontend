@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+    		"scripts/lib/utils/_utils.js",
+    		"scripts/lib/utils/_support.js",
+    		"scripts/lib/utils/_events.js",
+    		"scripts/lib/utils/_browser.js",
+    		"scripts/lib/modules/_file-input.js",
+    		"scripts/lib/modules/_form.js",
+    		"scripts/lib/modules/_deadlinks.js",
+    		"scripts/lib/modules/_body-class.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://frontendboilerplate.dev"
+  },
+  "paths": {
+  	"source": "assets/",
+  	"dist": "dist/"
+  }
+}

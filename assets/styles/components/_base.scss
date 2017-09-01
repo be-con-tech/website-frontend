@@ -1,0 +1,190 @@
+//
+// Name:            Base
+//
+// Description:     Contains all base styles, including basic resets
+//
+
+// ========================================================================
+// Component
+// ========================================================================
+
+body {
+	background:$background;
+	overflow-x: hidden;
+	color: $color-black;
+	-webkit-font-smoothing: antialiased;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+a {
+	@include transition(.6s);
+	color: $secondary-purple;
+
+	&:hover,
+	&:focus {
+
+	}
+}
+
+video::-webkit-media-controls {
+	display: none !important;
+}
+
+
+// Heading styles
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family: 'Zilla Slab', sans-serif;
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 76px;
+
+	@media only screen and (max-width: 768px) {
+		font-size: 48px;
+		line-height: 72px;
+	}
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 48px;
+
+	@media only screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+
+	@media only screen and (max-width: 568px) {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+// Global text styles
+p.subtitle {
+	font-size: 16px;
+	font-weight: bold;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+blockquote {
+	font-size: 24px;
+	font-style: italic;
+	line-height: 41px;
+	margin: 28px 0;
+	padding: 0 40px;
+	border-left: 2px #ccc solid;
+}
+
+.intro-text {
+	font-size: 20px;
+	line-height: 34px;
+	margin-bottom: 20px;
+}
+
+#hero {
+	width:100%;
+	height:440px;
+	position:relative;
+	background:#000;
+
+	.wrapper {
+		position:relative;
+		z-index:999;
+	}
+	h1 {
+		font-size:72px;
+		line-height:82px;
+		font-weight: 900;
+		color:$color-white;
+		text-transform:uppercase;
+		margin:140px 0 20px 0;
+	}
+	p {
+		font-size:18px;
+		color:$color-white;
+		width:50%;
+	}
+	.banner {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:1;
+		background-size:100% !important;
+		background-position:50%;
+		background-repeat:no-repeat;
+	}
+	.banner-overlay {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:2;
+		background:rgba($secondary-purple, 0.5);
+	}
+
+	@media only screen and (max-width: 568px) and (min-width: 1px) {
+		&,
+		.banner,
+		.banner-overlay {
+			height:350px;
+		}
+		h1 {
+			font-size:42px;
+			line-height:52px;
+			margin:80px 0 20px 0;
+		}
+		p {
+			width:100%;
+			font-size:14px;
+			line-height:22px;
+		}
+	}
+	@media only screen and (max-width: 568px) and (min-width: 1px) {
+		h1 {
+			font-size:32px;
+			line-height:42px;
+		}
+	}
+}
+
+section.yellow {
+	background-color: $brand-primary;
+}
+
+section.purple {
+	background-color: $secondary-purple;
+}
+
+section.gradient {
+	background-image: linear-gradient(to bottom, $secondary-dkpurple, $secondary-purple);
+}
+
+section.intro {
+	.row > div {
+		text-align: center;
+	}
+	.content {
+		font-size: 24px;
+		line-height: 36px;
+	}
+}

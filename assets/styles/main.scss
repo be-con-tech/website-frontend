@@ -1,0 +1,33 @@
+@import "common/variables";
+// Automatically injected Bower dependencies
+// via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/sass-flex-mixin/_flex.scss";
+@import "../../bower_components/flexboxgrid-sass/flexboxgrid.scss";
+@import "../../bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+// bower:css
+// endbower
+
+// common
+@import "common/mixins";
+@import "common/fonts";
+
+// sacffolding/primary
+@import "common/reset";
+@import "template-parts/layouts";
+
+// components
+@import "components/base";
+@import "components/animation";
+@import "components/button";
+@import "components/form";
+
+// template parts
+@import "template-parts/header";
+@import "template-parts/nav";
+@import "template-parts/footer";
+
+// template parts
+@import "templates/home";

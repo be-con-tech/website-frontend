@@ -1,0 +1,79 @@
+//
+// Name:            Footer
+//
+// Description:     Contains all footer styles
+//
+
+// ========================================================================
+// Component: Footer
+// ========================================================================
+
+.footer {
+	position:relative;
+	background:$secondary-purple;
+	width:100%;
+	padding: 35px 0;
+	color: $color-white;
+	font-size: 10px;
+	line-height: 16px;
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
+	.copyright, .nav {
+		display: flex;
+		align-items: center;
+	}
+	.copyright {
+		justify-content: flex-start;
+
+		.logo {
+			display: block;
+			margin-right: 15px;
+			width: 75px;
+			height: 33px;
+			background-image: url('../images/logo.svg');
+			background-size: 100%;
+			background-repeat:no-repeat;
+			overflow: hidden;
+			text-indent: -300px;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+	.nav {
+		justify-content: flex-end;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				min-width: 25px;
+				margin: 0 10px;
+
+				a {
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1px) {
+	.footer .nav {
+		padding:40px 0;
+
+		ul {
+			width:100%;
+			text-align:center;
+		}
+	}
+}

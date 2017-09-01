@@ -1,0 +1,75 @@
+//
+// Name:            Layout
+//
+// Description:     Contains all style definitions concerning basic
+//					structure and layout
+//
+
+// ========================================================================
+// Component: Base
+// ========================================================================
+
+.main {
+	padding:0;
+	position:relative;
+	z-index:99;
+}
+
+.wrapper {
+	max-width: $wrapper-max-width-large;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.section {
+	position:relative;
+	vertical-align:top;
+}
+
+// Section padding
+.section.large-padding {
+	padding:100px 0;
+}
+
+.section.medium-padding {
+	padding:60px 0;
+}
+
+.section.small-padding {
+	padding:40px 0;
+}
+
+// Text alignment
+.text-left {
+	text-align:left;
+}
+.text-center {
+	text-align:center;
+}
+.text-right {
+	text-align:right;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1px) {
+	.wrapper {
+		max-width: $wrapper-max-width-small;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1px) {
+	.row > [class*="col-"] {
+		flex-basis: 100%;
+    	max-width: 100%;
+	}
+	.first-xs {
+		order:1;
+		-ms-flex-order: 1;
+	}
+	.last-xs {
+		order:0;
+		-ms-flex-order: 0;
+	}
+}

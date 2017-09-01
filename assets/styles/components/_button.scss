@@ -1,0 +1,53 @@
+//
+// Name:            Buttons
+//
+// Description:     Contains all button styles
+//
+
+// ========================================================================
+// Component
+// ========================================================================
+
+.button {
+	border: 2px $secondary-purple solid;
+	background-color: $secondary-purple;
+	color: $color-white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 16px;
+	height: 51px;
+	border-radius: 100px;
+	width: 130px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transform: perspective(1px) translateZ(0);
+	transition: .5s;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $color-white;
+		transform: scaleX(0);
+		transition: transform .5s;
+		transition-timing-function: ease-out;
+	}
+
+	&:hover {
+		color: $secondary-purple;
+
+		&:before {
+			transform: scaleX(1);
+			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		}
+	}
+}
