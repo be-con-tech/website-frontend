@@ -33,16 +33,16 @@ $form-field-height:40px;
 
 
 // Layout
-$wrapper-max-width-large:1440px;
+$wrapper-max-width-large:1200px;
 $wrapper-max-width-small:1200px;
 
-$hamburger-padding-x                       : 15px;
-$hamburger-padding-y                       : 15px;
+$hamburger-padding-x                       : 0px;
+$hamburger-padding-y                       : 0px;
 $hamburger-layer-width                     : 40px;
-$hamburger-layer-height                    : 4px;
-$hamburger-layer-spacing                   : 6px;
+$hamburger-layer-height                    : 3px;
+$hamburger-layer-spacing                   : 5px;
 $hamburger-layer-color                     : #000;
-$hamburger-layer-border-radius             : 4px;
+$hamburger-layer-border-radius             : 3px;
 
 $breakpoints:
   sm 568px 568px,

@@ -51,14 +51,6 @@
 	text-align:right;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1px) {
-	.wrapper {
-		max-width: $wrapper-max-width-small;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-
 @media only screen and (max-width: 768px) and (min-width: 1px) {
 	.row > [class*="col-"] {
 		flex-basis: 100%;

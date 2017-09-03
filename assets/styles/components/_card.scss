@@ -1,0 +1,51 @@
+.card {
+	text-align: left;
+	padding: 20px;
+	border: 1px $color-ltgray solid;
+	border-radius: 5px;
+	box-shadow: $box-shadow;
+	margin-bottom: 20px;
+	margin: 0 0 20px;
+	color: $color-black;
+	background-color: $background;
+	overflow: hidden;
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: .5em;
+		text-align: center;
+	}
+
+	.image {
+		margin-bottom: 20px;
+	}
+
+	&.image-card {
+		.image {
+			margin: -20px -20px 20px;
+			height: 230px;
+			background-size: cover;
+		}
+
+		h3 {
+			text-align: left;
+		}
+	}
+
+	&.icon-card {
+		.image {
+			text-align: center;
+
+			i.fa {
+				font-size: 96px;
+				color: $secondary-purple;
+			}
+
+			img {
+				margin: 0 auto;
+				max-width: 150px;
+				max-height: 150px;
+			}
+		}
+	}
+}

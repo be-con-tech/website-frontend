@@ -1,0 +1,71 @@
+section.section {
+	padding: 100px 0;
+
+  @media only screen and (max-width: 768px) {
+    padding: 75px 0;
+  }
+
+  @media only screen and (max-width: 568px) {
+    padding: 50px 0;
+  }
+}
+
+section.yellow {
+	background-color: $brand-primary;
+}
+
+section.purple {
+	background-color: $secondary-purple;
+	color: $color-white;
+}
+
+section.gradient {
+	background-image: linear-gradient(to bottom, $secondary-dkpurple, $secondary-purple);
+	color: $color-white;
+}
+
+section.intro {
+	h2 {
+		margin-bottom: .5em;
+	}
+
+	.row > div {
+		text-align: center;
+	}
+
+	.content {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+  @media only screen and (max-width: 568px) {
+    .content {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+section.text {
+	h2 {
+		span {
+			background-image: linear-gradient(to bottom, $secondary-purple, $secondary-purple);
+			background-size: 100% 3px;
+			background-position: 0 calc(100% - 3px);
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+section.image {
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.cards {
+	h2 {
+		margin-bottom: 0.5em;
+	}
+}
