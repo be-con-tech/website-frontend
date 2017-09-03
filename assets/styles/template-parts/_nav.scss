@@ -33,37 +33,60 @@
 			> a {
 				display:inline-block;
 				@include transition(.5s);
-
-				&:after {
-					content: "";
-					width: 0;
-					left: 0;
-					height: 3px;
-					background-color: $secondary-purple;
-					transition: .5s;
-					display: block;
+				padding: 5px;
+			}
+			&:hover {
+				> a {
+					&:hover {
+						color: $secondary-purple;
+					}
 				}
-				&:hover {
+			}
+			&.parent {
+				border-radius: 3px 3px 0 0;
+				border-width: 1px 1px 0 1px;
+				border-color: transparent;
+				border-style: solid;
+				transition: 0.5s;
+				> a {
+					z-index: 1000;
+					position: relative;
 					&:after {
-						width: 100%;
+						content: "\f107";
+						@include fa-icon();
+						transition: .5s;
+						display: inline-block;
+						margin-left: 5px;
+						transform: rotate(0deg);
+					}
+				}
+
+				&:hover {
+					border-color: $color-ltgray;
+					a {
+						background-color: $color-white;
+						&:after {
+							transform: rotate(180deg);
+						}
 					}
 				}
 			}
 			ul.submenu {
 				position:absolute;
-				top:30px;
-				left:0;
+				top:calc(100% - 1px);
+				left:-1px;
 				z-index:999;
 				width:300px;
 				list-style:none;
 				padding:0;
-				border-top: 3px $secondary-purple solid;
+				border-radius: 0 3px 3px 3px;
+				border: 1px $color-ltgray solid;
 				background-color: $color-white;
 				max-height: 0;
 				overflow:hidden;
-			    transform:perspective(400) rotate3d(1,0,0,-90deg);
-			    transform-origin:50% 0;
-			    transition:350ms;
+		    transform:perspective(400) rotate3d(1,0,0,-90deg);
+		    transform-origin:50% 0;
+		    transition:350ms;
 
 				li {
 					width:100%;
@@ -72,11 +95,12 @@
 						display:inline-block;
 						width:100%;
 						padding:10px;
-						color: $brand-primary;
+						color: $secondary-purple;
 						line-height: 1.2;
 
 						&:hover {
-
+							background-color: $secondary-purple;
+							color: $color-white;
 						}
 					}
 				}
