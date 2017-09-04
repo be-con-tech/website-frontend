@@ -217,6 +217,14 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
+select,
+textarea {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
 input[type="password"] {
 	border:$form-field-border;
 	height:$form-field-height;

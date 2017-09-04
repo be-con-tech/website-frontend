@@ -55,6 +55,52 @@
 	}
 }
 
+.oauth-button {
+	height: 28px;
+	border-radius: 3px;
+	color: $color-white;
+	padding: 3px 5px;
+	font-size: 12px;
+	display: flex;
+	letter-spacing: 0;
+	align-items: center;
+	transition: 0.5s;
+	text-transform: uppercase;
+	width: auto;
+	max-width: none;
+
+	i.fa {
+		color: $color-white;
+		margin-right: 5px;
+	}
+
+	&.twitter {
+		background-color: #1da1f2;
+		border-color: #1da1f2;
+
+		&:hover {
+			color: #1da1f2;
+
+			i.fa {
+				color: #1da1f2;
+			}
+		}
+	}
+
+	&.facebook {
+		background-color: #3b5998;
+		border-color: #3b5998;
+
+		&:hover {
+			color: #3b5998;
+
+			i.fa {
+				color: #3b5998;
+			}
+		}
+	}
+}
+
 .button-row {
 	margin: 20px 0;
 	display: flex;
