@@ -77,15 +77,15 @@ form > {
 }
 &:-ms-input-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &::-moz-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &::-webkit-input-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &:disabled {
 	&:-ms-input-placeholder {
@@ -166,8 +166,8 @@ label {
 	cursor: pointer;
 	position: relative;
 	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 10px;
+	font-weight: bold;
+	font-size: 12px;
 	letter-spacing: 2px;
 	margin: 0;
 }
@@ -213,6 +213,14 @@ label {
 
 		}
 	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+	font-family: 'Lato', Arial, sans-serif;
 }
 
 input[type="text"],
@@ -344,31 +352,37 @@ input[type="submit"] {
 	display: inline-block;
 	position: relative;
 	width:100%;
+	margin: 0;
+	padding: 0;
 
 	li {
 		position:relative;
-		display:inline-block;
+		display:block;
 		width:auto;
 	}
 	label {
 		line-height:20px;
-		padding-left:30px;
-		padding-right:30px;
+		padding-left:25px;
+		text-transform: none;
+		font-size: 1rem;
+		letter-spacing: 0px;
+		font-weight: normal;
 	}
 	label:before {
 		position: absolute;
 		content: '';
 		transition: .3s cubic-bezier(.68,-.55,.265,1.55);
 		top: 0;
-		left: 5px;
+		left: 0;
 		width: 20px;
 		height: 20px;
 		background:$color-white;
 		color:$secondary-purple;
 		@include border-radius(2px);
 		background-clip: padding-box;
-		border:1px solid #ccc;
+		border:1px solid $color-gray;
 		text-align:center;
+		margin-right: 5px;
 	}
 	input:checked + label:before {
 		content:'✔';
@@ -434,6 +448,10 @@ input[type="submit"] {
 		cursor: pointer;
 		opacity: 0;
 	}
+}
+
+.form-row {
+	margin-bottom: 20px;
 }
 
 .gform_footer {

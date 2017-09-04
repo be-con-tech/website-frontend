@@ -12,6 +12,7 @@
 	border: 2px $secondary-purple solid;
 	background-color: $secondary-purple;
 	color: $color-white;
+	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 16px;
@@ -50,6 +51,79 @@
 		&:before {
 			transform: scaleX(1);
 			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		}
+	}
+}
+
+.oauth-button {
+	height: 28px;
+	border-radius: 3px;
+	color: $color-white;
+	padding: 3px 5px;
+	font-size: 12px;
+	display: flex;
+	letter-spacing: 0;
+	align-items: center;
+	transition: 0.5s;
+	text-transform: uppercase;
+	width: auto;
+	max-width: none;
+
+	i.fa {
+		color: $color-white;
+		margin-right: 5px;
+	}
+
+	&.twitter {
+		background-color: #1da1f2;
+		border-color: #1da1f2;
+
+		&:hover {
+			color: #1da1f2;
+
+			i.fa {
+				color: #1da1f2;
+			}
+		}
+	}
+
+	&.facebook {
+		background-color: #3b5998;
+		border-color: #3b5998;
+
+		&:hover {
+			color: #3b5998;
+
+			i.fa {
+				color: #3b5998;
+			}
+		}
+	}
+}
+
+.button-row {
+	margin: 20px 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+
+	.button {
+		margin-right: 20px;
+	}
+
+	&.center {
+		justify-content: center;
+
+		.button {
+			margin: 0 10px;
+		}
+	}
+
+	&.right {
+		justify-content: flex-end;
+
+		.button {
+			margin: 0 0 0 20px;
 		}
 	}
 }
