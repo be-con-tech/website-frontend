@@ -17,4 +17,19 @@
   		padding-bottom: 50px;
     }
   }
+
+  section#updates {
+    .card {
+      h3 {
+        text-align: left;
+        margin: 0;
+      }
+
+      .datetime {
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+    }
+  }
 }
