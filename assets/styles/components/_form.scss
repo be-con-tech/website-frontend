@@ -77,15 +77,15 @@ form > {
 }
 &:-ms-input-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &::-moz-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &::-webkit-input-placeholder {
 	opacity:1;
-	color:$color-black;
+	color:$color-gray;
 }
 &:disabled {
 	&:-ms-input-placeholder {
