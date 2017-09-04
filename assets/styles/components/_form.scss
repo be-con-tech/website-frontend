@@ -352,31 +352,37 @@ input[type="submit"] {
 	display: inline-block;
 	position: relative;
 	width:100%;
+	margin: 0;
+	padding: 0;
 
 	li {
 		position:relative;
-		display:inline-block;
+		display:block;
 		width:auto;
 	}
 	label {
 		line-height:20px;
-		padding-left:30px;
-		padding-right:30px;
+		padding-left:25px;
+		text-transform: none;
+		font-size: 1rem;
+		letter-spacing: 0px;
+		font-weight: normal;
 	}
 	label:before {
 		position: absolute;
 		content: '';
 		transition: .3s cubic-bezier(.68,-.55,.265,1.55);
 		top: 0;
-		left: 5px;
+		left: 0;
 		width: 20px;
 		height: 20px;
 		background:$color-white;
 		color:$secondary-purple;
 		@include border-radius(2px);
 		background-clip: padding-box;
-		border:1px solid #ccc;
+		border:1px solid $color-gray;
 		text-align:center;
+		margin-right: 5px;
 	}
 	input:checked + label:before {
 		content:'✔';
