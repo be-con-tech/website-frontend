@@ -158,6 +158,12 @@ blockquote {
 			margin: 70px auto;
 			width: fit-content;
 		}
+
+		h2 {
+			margin-top: -50px;
+	    padding-bottom: 50px;
+			color: white;
+		}
 	}
 
 	@media only screen and (max-width: 568px) and (min-width: 1px) {
