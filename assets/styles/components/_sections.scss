@@ -21,11 +21,27 @@ section.yellow {
 section.purple {
 	background-color: $secondary-purple;
 	color: $color-white;
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
 }
 
 section.gradient {
 	background-image: linear-gradient(to bottom, $secondary-dkpurple, $secondary-purple);
 	color: $color-white;
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
 }
 
 section.intro {
