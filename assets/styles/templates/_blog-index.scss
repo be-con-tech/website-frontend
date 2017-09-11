@@ -1,0 +1,27 @@
+.page-template-template-blog-index {
+  .blog-entry {
+    margin-bottom: 60px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      margin-top: 30px;
+
+      a {
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+}
