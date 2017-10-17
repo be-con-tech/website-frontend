@@ -71,6 +71,14 @@
 			}
 		},
 
+		'page_template_template_landing': {
+			init: function () {
+				$(window).on('load', function() {
+					$('section#hero .content').addClass('show');
+				});
+			}
+		}
+
 	};
 
 	// The routing fires all common scripts, followed by the page specific scripts.
