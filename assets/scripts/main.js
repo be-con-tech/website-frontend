@@ -36,10 +36,12 @@
 					$('.hamburger').removeClass('is-active');
 				});
 
-				$('.topnav li.parent a').on('click', function(e) {
+				$('.topnav li.parent > a').on('click', function(e) {
 					if ($(window).width() <= 768) {
 						if ($(this).next('.submenu').not(":visible")) {
 							e.preventDefault();
+							$(this).next('.submenu').slideDown(500);
+							$(this).parent().siblings().find('.submenu').slideUp(500);
 						}
 					}
 				});
