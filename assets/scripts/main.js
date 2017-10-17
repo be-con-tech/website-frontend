@@ -36,10 +36,12 @@
 					$('.hamburger').removeClass('is-active');
 				});
 
-				$('.topnav li.parent a').on('click', function(e) {
+				$('.topnav li.parent > a').on('click', function(e) {
 					if ($(window).width() <= 768) {
 						if ($(this).next('.submenu').not(":visible")) {
 							e.preventDefault();
+							$(this).next('.submenu').slideDown(500);
+							$(this).parent().siblings().find('.submenu').slideUp(500);
 						}
 					}
 				});
@@ -70,6 +72,14 @@
 				// JavaScript to be fired on the home page, after the init JS
 			}
 		},
+
+		'page_template_template_landing': {
+			init: function () {
+				$(window).on('load', function() {
+					$('section#hero .content').addClass('show');
+				});
+			}
+		}
 
 	};
 

@@ -1,0 +1,16 @@
+.page-template-template-game-list {
+  #game-list {
+    .row {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      position: relative;
+      border-bottom: 1px $color-ltgray solid;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

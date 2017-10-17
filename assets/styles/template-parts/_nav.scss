@@ -146,6 +146,7 @@
 		font-size: 16px;
 		width: 100%;
 		border-top: 1px $color-ltgray solid;
+		border-bottom: 1px $color-ltgray solid;
 
 		> ul {
 			padding: 0;
@@ -155,6 +156,12 @@
 				width:100%;
 				margin:0;
 				height:auto;
+
+				&:hover {
+					ul.submenu {
+						display: none;
+					}
+				}
 
 				> a {
 					width:100%;
@@ -178,6 +185,9 @@
 					border: none;
 					border-radius: 0;
 					border-bottom: 2px $color-ltgray solid;
+					transform: none;
+					display: none;
+					max-height: none;
 
 					li {
 						border-bottom: 1px $color-ltgray dotted;
